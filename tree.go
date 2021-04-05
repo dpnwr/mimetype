@@ -43,13 +43,13 @@ var (
 	jar  = newMIME("application/jar", ".jar", matchers.Jar)
 	ole  = newMIME("application/x-ole-storage", "", matchers.Ole, aaf, msg, xls, pub, ppt, doc)
 	aaf  = newMIME("application/octet-stream", ".aaf", matchers.Aaf)
-	doc  = newMIME("application/msword", ".doc", matchers.Doc).
-		alias("application/vnd.ms-word")
 	ppt = newMIME("application/vnd.ms-powerpoint", ".ppt", matchers.Ppt).
 		alias("application/mspowerpoint")
 	pub = newMIME("application/vnd.ms-publisher", ".pub", matchers.Pub)
 	xls = newMIME("application/vnd.ms-excel", ".xls", matchers.Xls).
 		alias("application/msexcel")
+	doc  = newMIME("application/msword", ".doc", matchers.Doc).
+		alias("application/vnd.ms-word")
 	msg  = newMIME("application/vnd.ms-outlook", ".msg", matchers.Msg)
 	ps   = newMIME("application/postscript", ".ps", matchers.Ps)
 	fits = newMIME("application/fits", ".fits", matchers.Fits)

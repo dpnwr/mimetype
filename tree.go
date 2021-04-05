@@ -1,6 +1,6 @@
 package mimetype
 
-import "github.com/gabriel-vasile/mimetype/internal/matchers"
+import "github.com/dpnwr/mimetype/internal/matchers"
 
 // mimetype stores the list of MIME types in a tree structure with
 // "application/octet-stream" at the root of the hierarchy. The hierarchy
